@@ -22,9 +22,8 @@ footer {
   padding-top: 20px;
 }
 
-h1 {
+h2 {
   text-align: center;
-  color: white;
 }
 
 
@@ -43,19 +42,22 @@ h1 {
   padding: 0 10px;
 }
 
+.flex {
+  display: flex;
+}
+
 .container-fluid {
   width: 100%;
 }
 
 .w-60 {
-  content: "Blocco Immagine";
-  background-color: crimson;
   width: 60%;
 }
 
-.w-40 {
-  content: "Blocco testo";
-  background-color: brown;
+ 
+
+
+.w-40 { 
   width: 40%;
 }
 
@@ -72,7 +74,6 @@ h1 {
 .fake-button {
   background-color: #FFFFFF;
   color: black;
-  font-weight: bold;
   padding: 8px;
   text-align: center;
   line-height: 100%;
@@ -88,6 +89,9 @@ h1 {
 
 /* ***************************HEADER*************************** */
 
+header span.fake-button {
+  font-size: 0.6rem;
+}
 
 header .row {
   justify-content: center;
@@ -130,19 +134,27 @@ header a {
 
 main section {
   padding: 50px;
+
 }
 
 
 main section:first-child {
-  background-color:darkblue;
+  background-image: url(../img/jumbo.png);
+  background-size: contain;
+  color: white;
+
+}
+
+section#hero div.container {
+  max-width: 700px;
 }
 
 main section#hero ~ section:nth-child(odd) {
-  background-color: red;
+  background-color: lightgray;
 }
 
 main section#hero ~ section:nth-child(even) {
-  background-color: green;
+  background-color: white;
 }
 
 /* NON FUNZIONA PER PROBLEMA SPECIFICITA', INSERITO ATTRIBUTO STYLE SU HTML
@@ -156,15 +168,34 @@ main section#pre-footer:last-child {
 
 section#hero div {
   max-width: 900px;
-  height: 400px; /*DEBUG*/
+  /* height: 400px; /*DEBUG*/  */
 } 
 
-main section div:first-child {
-  height: 500px; /*DEBUG*/
+section#hero .container {
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
 }
 
-#tecnologia .container {
-  height: 1000px; /* DEBUG */
+section#hero span.fake-button:last-child {
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+}
+
+/* main section div:first-child {
+  /* height: 500px; DEBUG */
+
+
+/* #tecnologia .container {
+  /* height: 1000px; DEBUG */
+
+section#invito div .col.w-60 {
+
+  vertical-align: middle;
 }
 
 #pre-footer .col:not(:first-child) {
@@ -187,5 +218,4 @@ footer .container {
 
 footer .container .row {
   justify-content: space-between;
-
 }
