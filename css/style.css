@@ -149,12 +149,9 @@ main section:first-child {
 
 }
 
-section#hero div.container {
-  max-width: 700px;
-}
 
 main section#hero ~ section:nth-child(odd) {
-  background-color: lightgray;
+  background-color: #F6F6F6;
 }
 
 main section#hero ~ section:nth-child(even) {
@@ -258,9 +255,6 @@ text-align: left;
 
 /*SEZIONE FANDOM*/
 
-section#tecnologia h2 {
-  padding-bottom: 20px;
-}
 section#fandom div.row{
   margin-top: -182px;
 }
@@ -297,15 +291,15 @@ section#tecnologia {
 }
 
 div.stella {
-  margin: 0 auto 40px;
-
+  margin: 0 auto 20px;
   width: 300px;
   background-image:url(../img/stars.svg);
   background-size: cover;
   background-position: bottom;
 }
-section#tecnologia .fake-button {
-  background-color: #8EA1E2;
+
+span.fake-button {
+  background-color: #8FA1E1;
 }
 
 /*SEZIONE FINALE MAIN*/
