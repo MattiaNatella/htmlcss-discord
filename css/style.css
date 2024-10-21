@@ -137,10 +137,14 @@ main section {
 
 }
 
+section#hero {
+  padding: 180px;
+}
 
 main section:first-child {
   background-image: url(../img/jumbo.png);
-  background-size: contain;
+  background-size: cover;
+  background-position: bottom;
   color: white;
 
 }
@@ -193,9 +197,28 @@ section#hero span.fake-button:last-child {
 /* #tecnologia .container {
   /* height: 1000px; DEBUG */
 
+  section#invito div.row{
+    margin-top: -182px;
+  }
 section#invito div .col.w-60 {
+  padding-top: 211px;
+  flex-wrap: wrap;
+  align-content: center; 
+  }  
 
-  vertical-align: middle;
+section#invito div .col.w-40 {
+  padding-top: 100px;
+  flex-wrap: wrap;
+  max-width: 250px;
+  flex-direction: flex-start;
+  align-content: center;
+  text-align: left;
+ 
+}
+
+section#invito h2{
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 #pre-footer .col:not(:first-child) {
@@ -208,6 +231,9 @@ section#invito div .col.w-60 {
   width: calc(100% - 800px);
 }
 
+div .col.w-60 img {
+max-width: 100%;
+}
 
 /* ***************************FOOTER*************************** */
 
