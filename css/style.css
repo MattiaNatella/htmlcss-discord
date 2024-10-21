@@ -29,12 +29,12 @@ h2 {
 
 /* ***************************UTILITY*************************** */
 
-.debug {
+/* .debug {
   background-color: rgba(255, 0, 0, 0.2);
   Color: white;
   border: 2px dashed  black;
   /* min-height: 50px; */
-}
+} */
 
 .container {
   max-width: 1100px;
@@ -195,9 +195,13 @@ section#hero span.fake-button:last-child {
 
 
 /* #tecnologia .container {
-  /* height: 1000px; DEBUG */
+  
+/* height: 1000px; DEBUG */
 
-  section#invito div.row{
+
+/*SEZIONE INVITO*/
+
+ section#invito div.row{
     margin-top: -182px;
   }
 section#invito div .col.w-60 {
@@ -209,7 +213,6 @@ section#invito div .col.w-60 {
 section#invito div .col.w-40 {
   padding-top: 100px;
   flex-wrap: wrap;
-  max-width: 250px;
   flex-direction: flex-start;
   align-content: center;
   text-align: left;
@@ -220,6 +223,92 @@ section#invito h2{
   margin-bottom: 10px;
   text-align: left;
 }
+
+/*SEZIONE INVITO*/
+
+/*SEZIONE DOVE */
+
+section#dove div.row{
+  margin-top: -182px;
+}
+section#dove div .col.w-60 {
+padding-top: 211px;
+flex-wrap: wrap;
+align-content: center; 
+}  
+
+section#dove div .col.w-40 {
+padding-top: 100px;
+flex-wrap: wrap;
+flex-direction: flex-start;
+align-content: center;
+text-align: left;
+
+}
+
+section#dove img {
+padding-top: 20px;
+}
+section#dove h2{
+margin-bottom: 10px;
+text-align: left;
+}
+
+/*SEZIONE DOVE*/
+
+/*SEZIONE FANDOM*/
+
+section#tecnologia h2 {
+  padding-bottom: 20px;
+}
+section#fandom div.row{
+  margin-top: -182px;
+}
+section#fandom div .col.w-60 {
+padding-top: 211px;
+flex-wrap: wrap;
+
+}  
+
+section#fandom div .col.w-40 {
+padding-top: 100px;
+flex-wrap: wrap;
+flex-direction: flex-start;
+align-content: center;
+text-align: left;
+
+}
+
+section#fandom img {
+  padding-top: 20px;
+}
+section#fandom h2{
+margin-bottom: 10px;
+text-align: left;
+}
+
+
+/*SEZIONE FANDOM*/
+
+/*SEZIONE FINALE MAIN*/
+
+section#tecnologia {
+  text-align: center;
+}
+
+div.stella {
+  margin: 0 auto 40px;
+
+  width: 300px;
+  background-image:url(../img/stars.svg);
+  background-size: cover;
+  background-position: bottom;
+}
+section#tecnologia .fake-button {
+  background-color: #8EA1E2;
+}
+
+/*SEZIONE FINALE MAIN*/
 
 #pre-footer .col:not(:first-child) {
   background-color: aqua;
@@ -234,6 +323,8 @@ section#invito h2{
 div .col.w-60 img {
 max-width: 100%;
 }
+
+
 
 /* ***************************FOOTER*************************** */
 
