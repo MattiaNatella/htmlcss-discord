@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 header {
-  background-color: turquoise;
-  padding: 10px;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: #3160E0;
+  color: white;
+  padding-top: 10px;
 }
 
 body {
@@ -68,18 +69,44 @@ h1 {
 
 }
 
+.fake-button {
+  background-color: #FFFFFF;
+  color: black;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  line-height: 100%;
+  border-radius: 25px;
+  max-height: 100%;
+}
+
+.fake-button:hover {
+  opacity: 0.6;
+}
+
+
 
 /* ***************************HEADER*************************** */
 
 
 header .row {
   justify-content: center;
+  align-items: center;
   
+}
+header .row img {
+  vertical-align: middle;
 }
 
 header ul li{ 
   display: inline-block;
 }
+
+header ul li a{ 
+  color: white;
+  padding-left: 30px;
+}
+
 header div.col:nth-child(odd) {
   width: 150px;
 }
