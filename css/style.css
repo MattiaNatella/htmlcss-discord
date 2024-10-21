@@ -1,0 +1,164 @@
+/* **************************GENERAL**************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: turquoise;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: blue;
+}
+
+footer {
+  background-color: #23272A;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+
+/* ***************************UTILITY*************************** */
+
+.debug {
+  background-color: rgba(255, 0, 0, 0.2);
+  Color: white;
+  border: 2px dashed  black;
+  /* min-height: 50px; */
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.w-60 {
+  content: "Blocco Immagine";
+  background-color: crimson;
+  width: 60%;
+}
+
+.w-40 {
+  content: "Blocco testo";
+  background-color: brown;
+  width: 40%;
+}
+
+
+.row {
+  display: flex;
+}
+
+.col {
+  padding: 5px 10px;
+
+}
+
+
+/* ***************************HEADER*************************** */
+
+
+header .row {
+  justify-content: center;
+  
+}
+
+header ul li{ 
+  display: inline-block;
+}
+header div.col:nth-child(odd) {
+  width: 150px;
+}
+
+header div.col:nth-child(2) {
+  width: calc(100% - 300px);
+  text-align: center
+  
+}
+
+header div.col:last-child {
+  text-align: right;
+}
+
+header a {
+  text-decoration: none;
+}
+
+/* ***************************MAIN*************************** */
+
+
+main section {
+  padding: 50px;
+}
+
+
+main section:first-child {
+  background-color:darkblue;
+}
+
+main section#hero ~ section:nth-child(odd) {
+  background-color: red;
+}
+
+main section#hero ~ section:nth-child(even) {
+  background-color: green;
+}
+
+/* NON FUNZIONA PER PROBLEMA SPECIFICITA', INSERITO ATTRIBUTO STYLE SU HTML
+
+main section#pre-footer:last-child {
+  background-color: #23272A;
+}
+
+*/
+
+
+section#hero div {
+  max-width: 900px;
+  height: 400px; /*DEBUG*/
+} 
+
+main section div:first-child {
+  height: 500px; /*DEBUG*/
+}
+
+#tecnologia .container {
+  height: 1000px; /* DEBUG */
+}
+
+#pre-footer .col:not(:first-child) {
+  background-color: aqua;
+  width: 200px;
+}
+
+#pre-footer .col:first-child {
+  background-color: pink;
+  width: calc(100% - 800px);
+}
+
+
+/* ***************************FOOTER*************************** */
+
+footer .container {
+  padding: 10px 0 10px;
+  background-color: aquamarine;
+}
+
+footer .container .row {
+  justify-content: space-between;
+
+}
